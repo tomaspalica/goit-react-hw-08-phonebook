@@ -12,10 +12,11 @@ import {
   REGISTER,
 } from 'redux-persist/es/persistStore';
 import storage from 'redux-persist/lib/storage';
-import { authReducer } from './auth/authslice';
+import { authReducer } from './auth/authSlice';
 export const store = configureStore({
   reducer: {
     contacts: contactReducer,
     filter: filterReducer,
+    auth: authReducer,
   },
 });

@@ -1,14 +1,16 @@
+import { AuthNav } from 'components/AuthNav';
+import { UserMenu } from 'components/UserMenu';
+import { useAuth } from 'hooks/useAuth';
 import { Link, Outlet } from 'react-router-dom';
-
+import { Naviagtion } from 'components/Navigation';
 export const SharedLayout = () => {
+  const { isLoggedIn } = useAuth();
+
   return (
     <>
       <header>
-        <nav>
-          <Link to="/"> Home</Link>
-          <Link to="contacts"> Contacts</Link>
-          <Link to="login">Login</Link>
-        </nav>
+        <Naviagtion />
+        {isLoggedIn ? <UserMenu /> : <AuthNav />}
       </header>
       <Outlet />
     </>

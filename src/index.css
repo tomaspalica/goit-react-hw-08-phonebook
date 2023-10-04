@@ -7,6 +7,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  margin: auto;
+  width: 1024px;
+  padding: 10px;
+
+  font-size: 14px;
 }
 
 code {

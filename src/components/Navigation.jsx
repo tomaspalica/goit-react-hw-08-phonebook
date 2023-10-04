@@ -2,11 +2,11 @@ import { useAuth } from 'hooks/useAuth';
 import { NavLink } from 'react-router-dom';
 
 export const Naviagtion = () => {
-  const { isloggedIn } = useAuth();
+  const { isLoggedIn } = useAuth();
   return (
     <nav>
       <NavLink to="/">Home</NavLink>
-      {isloggedIn ? <NavLink to="contacts">Contacts</NavLink> : null}
+      {isLoggedIn ? <NavLink to="contacts">Contacts</NavLink> : null}
     </nav>
   );
 };

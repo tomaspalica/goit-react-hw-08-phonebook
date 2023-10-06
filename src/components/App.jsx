@@ -1,9 +1,8 @@
-import { ContactsList } from './ContactsList';
-import { Filter } from './Filter';
-import { ContactForm } from './ContactForm';
+
+
 import { Contacts } from 'pages/contacts';
 
-import css from '../css/App.module.css';
+
 import { HomePage } from 'pages/HomePage';
 import { Routes, Route } from 'react-router-dom';
 import { PageNotFound } from 'pages/PageNotFound';

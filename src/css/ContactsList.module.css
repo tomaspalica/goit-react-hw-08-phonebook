@@ -2,4 +2,7 @@
   padding-left: 0px;
 
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }

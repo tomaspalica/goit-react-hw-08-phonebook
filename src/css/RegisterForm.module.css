@@ -1,0 +1,13 @@
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.registerForm label {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+.registerForm button {
+  width: 100px;
+}

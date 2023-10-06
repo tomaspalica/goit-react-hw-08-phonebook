@@ -1,10 +1,8 @@
-.navWrapper {
+.AuthNavWrap {
   display: flex;
-  align-items: center;
   gap: 20px;
-  height: 40px;
 }
-.navWrapper a {
+.AuthNavWrap a {
   text-decoration: none;
   color: black;
   height: 55px;
@@ -13,8 +11,7 @@
   align-items: center;
   justify-content: center;
 }
-
-.navWrapper a:hover {
+.AuthNavWrap a:hover {
   background-color: bisque;
   border-radius: 50% 20% / 10% 40%;
 }

@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { registerUser } from 'redux/auth/operations';
-
+import css from '../css/RegisterForm.module.css';
 export const RegisterForm = () => {
   const dispatch = useDispatch();
 
@@ -17,9 +17,9 @@ export const RegisterForm = () => {
     form.reset();
   };
   return (
-    <>
-      <div>Register</div>
-      <form onSubmit={handleSubmit}>
+    <main>
+      <h2>Register</h2>
+      <form className={css.registerForm} onSubmit={handleSubmit}>
         <label>
           Name
           <input type="name" name="name" />
@@ -32,8 +32,8 @@ export const RegisterForm = () => {
           Password
           <input type="password" name="password" />
         </label>
-        <button>Login</button>
+        <button>Register</button>
       </form>
-    </>
+    </main>
   );
 };

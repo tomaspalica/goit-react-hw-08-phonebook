@@ -3,6 +3,7 @@ import css from '../css/ContactsList.module.css';
 import { useEffect } from 'react';
 import { fetchcontacts, deleteContacts } from 'redux/operations';
 import { selectError, selectFilterNames, selectLoading } from 'redux/selectors';
+
 export const ContactsList = ({ children }) => {
   const dispatch = useDispatch();
   const loading = useSelector(selectLoading);

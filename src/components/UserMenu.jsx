@@ -1,12 +1,15 @@
 import { useDispatch } from 'react-redux';
 import { useAuth } from 'hooks/useAuth';
 import { logOut } from 'redux/auth/operations';
-import css from '../css/UserMenu.module.css'
+import css from '../css/UserMenu.module.css';
+
 export const UserMenu = () => {
   const dispatch = useDispatch();
   const { user } = useAuth();
-
-  const handleLogout = () => dispatch(logOut());
+  const handleLogout = () => {
+   
+    dispatch(logOut());
+  };
 
   return (
     <div className={css.userMenuWrap}>

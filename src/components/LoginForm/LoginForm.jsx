@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { logIn } from 'redux/auth/operations';
-import css from '../css/LoginForm.module.css';
-import { StyledButton } from 'css/styledTags';
+import css from './LoginForm.module.css';
+import { StyledButton } from 'styledTags';
 export const LoginForm = () => {
   const dispatch = useDispatch();
   const handleSubmit = e => {

@@ -1,5 +1,5 @@
-import { StyledLink } from 'css/styledTags';
-import css from '../css/AuthNav.module.css';
+import { StyledLink } from 'styledTags';
+import css from './AuthNav.module.css';
 
 export const AuthNav = () => {
   return (

@@ -1,5 +1,5 @@
-import { StyledButton } from 'css/styledTags';
-import css from '../css/ContactForm.module.css';
+import { StyledButton } from 'styledTags';
+import css from './ContactForm.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { addContact } from 'redux/operations';

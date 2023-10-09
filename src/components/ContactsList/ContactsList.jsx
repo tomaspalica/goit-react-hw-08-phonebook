@@ -1,9 +1,9 @@
 import { useDispatch, useSelector } from 'react-redux';
-import css from '../css/ContactsList.module.css';
+import css from './ContactsList.module.css';
 import { useEffect } from 'react';
 import { fetchcontacts, deleteContacts } from 'redux/operations';
 import { selectError, selectFilterNames, selectLoading } from 'redux/selectors';
-import { StyledButton } from 'css/styledTags';
+import { StyledButton } from 'styledTags';
 
 export const ContactsList = ({ children }) => {
   const dispatch = useDispatch();
@@ -29,8 +29,13 @@ export const ContactsList = ({ children }) => {
       <ul className={css.nameList}>
         {filteredNames.map(({ id, name, number }) => (
           <li key={id}>
-            {name}: {number}{' '}
-            <StyledButton className={css.listButton} id={id} name={name} onClick={contactDelete}>
+            {name}: {number}
+            <StyledButton
+              className={css.listButton}
+              id={id}
+              name={name}
+              onClick={contactDelete}
+            >
               delete
             </StyledButton>
           </li>

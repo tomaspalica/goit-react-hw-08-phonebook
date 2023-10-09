@@ -1,21 +1,7 @@
 import { useAuth } from 'hooks/useAuth';
-import { NavLink } from 'react-router-dom';
 import css from './../css/Navigation.module.css';
-import styled from 'styled-components';
+import { StyledLink } from 'css/styledTags';
 
-export const StyledLink = styled(NavLink)`
-  text-decoration: none;
-  color: black;
-  height: 55px;
-  width: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  &.active {
-    background-color: bisque;
-    border-radius: 50% 20% / 10% 40%;
-  }
-`;
 
 export const Naviagtion = () => {
   const { isLoggedIn } = useAuth();

@@ -6,3 +6,9 @@
   flex-direction: column;
   gap: 10px;
 }
+.nameList li {
+  display: flex;
+  align-items: center;
+}
+.listButton {
+}

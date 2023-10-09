@@ -1,5 +1,6 @@
+import { StyledLink } from 'css/styledTags';
 import css from '../css/AuthNav.module.css';
-import { StyledLink } from './Navigation';
+
 export const AuthNav = () => {
   return (
     <div className={css.AuthNavWrap}>

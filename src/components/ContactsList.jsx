@@ -3,6 +3,7 @@ import css from '../css/ContactsList.module.css';
 import { useEffect } from 'react';
 import { fetchcontacts, deleteContacts } from 'redux/operations';
 import { selectError, selectFilterNames, selectLoading } from 'redux/selectors';
+import { StyledButton } from 'css/styledTags';
 
 export const ContactsList = ({ children }) => {
   const dispatch = useDispatch();
@@ -29,9 +30,9 @@ export const ContactsList = ({ children }) => {
         {filteredNames.map(({ id, name, number }) => (
           <li key={id}>
             {name}: {number}{' '}
-            <button id={id} name={name} onClick={contactDelete}>
+            <StyledButton className={css.listButton} id={id} name={name} onClick={contactDelete}>
               delete
-            </button>
+            </StyledButton>
           </li>
         ))}
       </ul>

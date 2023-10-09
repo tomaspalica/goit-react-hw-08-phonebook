@@ -1,3 +1,4 @@
+import { StyledButton } from 'css/styledTags';
 import css from '../css/ContactForm.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -51,7 +52,7 @@ const ContactForm = () => {
             required
           />
         </label>
-        <button>add contact</button>
+        <StyledButton>add contact</StyledButton>
       </form>
     </div>
   );
